@@ -1,14 +1,23 @@
+<!-- 
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   text-align: center;
   padding: 50px;
 }
+-->
 
-h1 {
-  color: #333;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;   /* full screen height */
+  margin: 0;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
 }
 
-p {
-  color: #666;
+h1 {
+  font-size: 60px;
+  color: #333;
 }
