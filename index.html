@@ -8,46 +8,74 @@
 </head>
 <body>
 
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Your Name</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
   <!-- Hero Section -->
-  <section class="hero">
-    <h1>Dhivaashiny's Personal Website</h1>
-    <p>(Current Role)</p>
+  <section id="hero" class="hero">
+    <h1>Your Name</h1>
+    <p>Your tagline here</p>
   </section>
 
   <!-- About Section -->
-  <section class="about">
+  <section id="about" class="about">
     <h2>About Me</h2>
-    <p>Intro etcetc</p>
+    <p>[Your short introduction]</p>
   </section>
 
   <!-- Projects Section -->
-  <section class="projects">
+  <section id="projects" class="projects">
     <h2>Projects</h2>
     <ul>
-      <li>[Project 1 Title – short description]</li>
-      <li>[Project 2 Title – short description]</li>
-      <li>[Project 3 Title – short description]</li>
+      <li>[Project 1]</li>
+      <li>[Project 2]</li>
+      <li>[Project 3]</li>
     </ul>
   </section>
 
   <!-- Resume Section -->
-  <section class="resume">
+  <section id="resume" class="resume">
     <h2>Experience</h2>
     <ul>
-      <li>[Job Title – Company – Year]</li>
-      <li>[Job Title – Company – Year]</li>
-      <li>[Job Title – Company – Year]</li>
+      <li>[Job 1]</li>
+      <li>[Job 2]</li>
+      <li>[Job 3]</li>
     </ul>
-    <!-- <p><a href="Your_CV.pdf" target="_blank">📄 Download My Resume</a></p> -->
+    <p><a href="Your_CV.pdf" target="_blank">📄 Download My Resume</a></p>
   </section>
 
   <!-- Contact Section -->
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <p>Email: [your email]</p>
-    <p>LinkedIn: [your LinkedIn link]</p>
-    <p>GitHub: [your GitHub link]</p>
+    <p>LinkedIn: [your LinkedIn]</p>
+    <p>GitHub: [your GitHub]</p>
   </section>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      hamburger.classList.toggle("active");
+    });
+  </script>
 
 </body>
 </html>
